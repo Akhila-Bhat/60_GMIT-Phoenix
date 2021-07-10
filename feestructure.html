@@ -9,6 +9,17 @@ table {
   width: 100%;
   border: 1px solid #ddd;
 }
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
 
 th, td {
   text-align: left;
@@ -20,7 +31,7 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body style="background-color:rgb(78, 107, 136);">
+<body style="background-color:rgb(190, 198, 206);">
 
 <h1 style="text-align: center; color: rgb(243, 240, 247) ;"">Fee Structure</h1>
 
@@ -100,6 +111,18 @@ tr:nth-child(even) {
     <td>130000</td>
   </tr>
 </table>
+
+<h3>Select the Payment Mode:</h3>
+<div>
+  <input type="radio" id="CC/DC" name="bank">
+  <label for="CC">Credit or Debit Card </label><br>  
+  <input type="radio" id="NetBanking" name="bank">
+  <label for="Netbanking">Net Banking</label><br>
+
+  <button class="btn" type="submit">Pay Fees</button>
+
+  </div>
+
 
 
 </body>

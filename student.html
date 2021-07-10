@@ -13,6 +13,25 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #800080;
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
 input[type=submit] {
   background-color: #ffffff;
@@ -46,7 +65,7 @@ p.one {
 <body background="C:\Users\User\Desktop\60_GMIT-Phoenix-main\Images\GMIT.jpg" style="background-size: cover;" >
   <p class="one">GM Institute Of Technology</p>
 
-<form action="http://localhost:8888" method="post">
+<form action="http://localhost:8886" method="post">
   <div class="container">
     <label for="uname"><b>First Name:</b></label>
     <input type="text" placeholder="firstname" name="fname" id="fname" required><br>
@@ -56,7 +75,6 @@ p.one {
 
     <label for="num"><b>Date of birth</b></label>
     <input type="Number" placeholder="DD/MM/YYYY" name="dob" id="dob" required><br>
-    <br>
         <label for="gender"><b>Gender</b>:</label>
         <select name="gender" id="gender">
           <option value="non"></option>
@@ -110,29 +128,19 @@ p.one {
     <br>
       <label for="uname"><b>RESIDENTAL ADDRESS</b></label>
   <input type="text" placeholder="address" name="address" id="address" required>
-  </br>
-  <p></p> 
   <br>
   <label for="uname"><b>SECONDARY ADDRESS</b></label>
   <input type="text" placeholder="saddress" name="saddress" id="saddress"  required>
-  </br>
-  <p></p>
   <br>
   <label for="uname"><b>PIN CODE</b></label>
   <input type="text" placeholder="pin" name="pin" id="pin" required>
-  </br>
-  <p></p>
   <br>
   <label for="uname"><b>STATE</b></label>
   <input type="text" placeholder="state" name="state" id="state" required>
-  </br>
-  <p></p>
   <br>
   <label for="uname"><b>DISTRICT</b></label>
   <input type="text" placeholder="district" name="district" id="district" required>
   </br>
-  <p></p>
-<br>
 <label for="uname"><b>TALUK</b></label>
 <input type="text" placeholder="taluk" name="taluk" id="taluk" required>
 </br>
@@ -179,7 +187,7 @@ p.one {
   <button type="submit">Submit</button>
   <label>
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button class="btn"><b><a href="frontpage.html">Cancel</a></b></button>
   </div>
 </form>
 
