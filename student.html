@@ -1,69 +1,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style.css" rel="stylesheet">
-<style>
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #800080;
-  border-radius: 40px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-input[type=number], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #800080;
-  border-radius: 40px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #ffffff;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #ffffff;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  border:6px solid rgb(250, 250, 250);
-}
-p.one {
-  border-style: solid;
-  border: 5px solid black;
-  text-align: center;
-  font-size: 100px; 
-  color:black;"
-}
-
-</style>
+<link href="styles.css" rel="stylesheet">
 </head>
-<body background="C:\Users\User\Desktop\60_GMIT-Phoenix-main\Images\GMIT.jpg" style="background-size: cover;" >
-  <p class="one">GM Institute Of Technology</p>
+<body style="background-color:oranged(186, 99, 207);" >
+
+
+    <h1 style="text-align:center; font-size: 100px; color:black;">GM Institute Of Technology</h1>
 
 <form action="http://localhost:8886" method="post">
   <div class="container">
@@ -128,19 +71,29 @@ p.one {
     <br>
       <label for="uname"><b>RESIDENTAL ADDRESS</b></label>
   <input type="text" placeholder="address" name="address" id="address" required>
+  </br>
+  <p></p> 
   <br>
   <label for="uname"><b>SECONDARY ADDRESS</b></label>
   <input type="text" placeholder="saddress" name="saddress" id="saddress"  required>
+  </br>
+  <p></p>
   <br>
   <label for="uname"><b>PIN CODE</b></label>
   <input type="text" placeholder="pin" name="pin" id="pin" required>
+  </br>
+  <p></p>
   <br>
   <label for="uname"><b>STATE</b></label>
   <input type="text" placeholder="state" name="state" id="state" required>
+  </br>
+  <p></p>
   <br>
   <label for="uname"><b>DISTRICT</b></label>
   <input type="text" placeholder="district" name="district" id="district" required>
   </br>
+  <p></p>
+<br>
 <label for="uname"><b>TALUK</b></label>
 <input type="text" placeholder="taluk" name="taluk" id="taluk" required>
 </br>
@@ -187,7 +140,7 @@ p.one {
   <button type="submit">Submit</button>
   <label>
   <div class="container" style="background-color:#f1f1f1">
-    <button class="btn"><b><a href="frontpage.html">Cancel</a></b></button>
+    <button type="button" class="cancelbtn">Cancel</button>
   </div>
 </form>
 
