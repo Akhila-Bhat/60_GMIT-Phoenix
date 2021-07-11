@@ -53,11 +53,7 @@ if(isset($_POST['fname']))
 
 $rs = mysqli_query($connection, $sql) or die("Bad Query: $sql");
   if($rs)
-  {echo "Contact Records Inserted";
-    header("Location: http://localhost:8885");
-    exit();
-  }
-
+  {echo "Contact Records Inserted";}
 
   // printf("fname: %s, lname: %s, dob: %s, gender: %s, religion: %s, category: %s, caste: %s, fathername: %s, mothername: %s, parentsmobile: %s, studentmobile: %s, email: %s,
   //  college: %s, how: %s, referredby: %s, aadhaar: %s, address: %s, saddress: %s, pin: %s, state: %s, district: %s, taluk: %s, schoolmarks: %s, schoolpercentage: %s, schoolname: %s,

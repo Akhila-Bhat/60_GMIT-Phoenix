@@ -27,17 +27,6 @@ if(isset($_POST['aadhaar'])) {
              
    $rs = mysqli_query($connection, $sql) or die("Bad Query: $sql");
    if($rs)
-   {
-    echo "Contact Records Inserted";
-    header("Location: http://localhost:8887/student.html");
-    exit();
-  }
-  // Flow  
-  // enquiry.html->enquiry.php->student.html->student.php->fees.html->fees.php->netbanking.html OR Card.html->payment.php
-  //http://localhost:8888/Enquiry.php include in enquiry.html
-  //http://localhost:8887/student.html include in enquiry.php
-  //http://localhost:8886/student.php include in student.html
-  //http://localhost:8885/fees.html include in student.php
-  //http://localhost:8886/fee.php include in fees.html
+   {echo "Contact Records Inserted";}
 }
 ?>
